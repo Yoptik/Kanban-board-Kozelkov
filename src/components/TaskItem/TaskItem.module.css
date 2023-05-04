@@ -1,0 +1,9 @@
+.task {
+    padding: 7px 9px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #000;
+    display: block;
+    overflow: hidden;
+}

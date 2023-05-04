@@ -1,0 +1,118 @@
+.taskWrapper {
+    padding: 12px;
+    background: #EBECF0;
+    border-radius: 10px;
+    min-height: 200px;
+
+}
+
+.tasks {
+    overflow: auto;
+    max-height: 90%;
+    padding-right: 12px;
+}
+
+.tasks::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.tasks::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #CBCBCB;
+}
+
+.title {
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    color: #5E6C84;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+}
+
+.btn:hover {
+    background: #fff;
+}
+
+.input {
+    padding: 7px 9px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input>input {
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.input>input:focus {
+    border-bottom: none;
+}
+
+
+
+
+.popupWrapper {
+    position: relative;
+    height: 200px;
+}
+
+.popupBlock {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 10px;
+}
+
+.popup {
+    position: absolute;
+    left: 0;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%
+}
+
+.popupItem {
+    width: 100%;
+    padding: 8px 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.popupItem:hover {
+    background: #DEDEDE;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 927px) {
+    .taskWrapper {
+        min-height: 0;
+    }
+    .popup {
+        z-index: 1000;
+        height: fit-content;
+        overflow: auto;
+    }
+    .popupWrapper {
+        height: 80px;
+    }
+    .tasks {
+        padding: 0;
+    }
+}
